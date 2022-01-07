@@ -84,27 +84,52 @@ src="https://www.facebook.com/tr?id=430113948659615&ev=PageView&noscript=1"
                     <div><input class="form-control form-control" type="tel" id="phone1" placeholder="No. Whatsapp Aktif" name="phone" required="" minlength="8" style="margin-bottom: 15px;background-color: rgba(255,255,255,0);" inputmode="numeric"></div><h6 style="font-family: Roboto, sans-serif;font-size: 18px;color: rgb(255,123,123); margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: center;" ><span style=" background:#fff;
     padding:0 10px;">Dikirim Kemana?</span></h6>
                     <textarea
-                        class="form-control" style="margin-bottom: 15px;height: 100px;" name="alamat" placeholder="Alamat Lengkap"></textarea>
-                        <div><input class="form-control" type="text" id="store1" style="margin-bottom: 15px;background-color: rgba(255,255,255,0);" placeholder="Kecamatan" name="kecamatan" minlength="3" required="">
+                        class="form-control" id="alamat-1" style="margin-bottom: 15px;height: 100px;" name="alamat" placeholder="Alamat Lengkap" required="" minlength="3"></textarea>
+                        <div><input class="form-control" type="text" id="kecamatan1" style="margin-bottom: 15px;background-color: rgba(255,255,255,0);" placeholder="Kecamatan" name="kecamatan" minlength="3" required="">
                             <div class="form-row">
-                                <div class="col"><input class="form-control" type="text" id="store-1" style="margin-bottom: 0;background-color: rgba(255,255,255,0);" placeholder="Kabupaten" name="kabupaten" minlength="3" required=""></div>
-                                <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Kode Pos" name="kodepos" minlength="3" required=""></div>
+                                <div class="col"><input class="form-control" type="text" id="kabupaten1" style="margin-bottom: 0;background-color: rgba(255,255,255,0);" placeholder="Kabupaten" name="kabupaten" minlength="3" required=""></div>
+                                <div class="col"><input class="form-control" type="text" id="store-2" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Kode Pos" name="kode pos" minlength="3" required="" inputmode="numeric"></div>
                             </div>
                         </div><h6 style="font-family: Roboto, sans-serif;font-size: 18px;color: rgb(255,123,123); margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: center;" ><span style=" background:#fff;
     padding:0 10px;">Warna Dress</span></h6>
-                        <div><select class="form-control" id="register" name="register" required="" style="color: rgb(73,80,87);"><option value="Dress Atika_Dusty">Dusty</option><option value="Dress Atika_Lilac" selected="">Lilac</option><option value="Dress Atika_Milo">Milo</option><option value="Dress Atika_Abu">Abu-abu</option><option value="Dress Atika - Mocca">Mocca</option><option value="Dress Atika_Maroon">Maroon</option></select></div><h6 style="font-family: Roboto, sans-serif;font-size: 18px;color: rgb(255,123,123); margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: center;" ><span style=" background:#fff;
+                        <div>
+                            <div class="form-row" style="margin-bottom: 5px;">
+                                <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Dusty" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                                <div class="col"><input class="form-control" type="number" placeholder="0" max="10" min="0" name="lilac"></div>
+                            </div>
+                            <div class="form-row" style="margin-bottom: 5px;">
+                                <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Lilac" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                                <div class="col"><select class="custom-select" id="register-1" name="register" required="" style="color: rgb(73,80,87);margin-bottom: 0;"><option value="0" selected="">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+                            </div>
+                            <div class="form-row" style="margin-bottom: 5px;">
+                                <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Milo" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                                <div class="col"><input class="form-control" type="number" placeholder="0" max="10" min="0"></div>
+                            </div>
+                            <div class="form-row" style="margin-bottom: 5px;">
+                                <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Abu-abu" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                                <div
+                                    class="col"><input class="form-control" type="number" placeholder="0" max="10" min="0"></div>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 5px;">
+                            <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Mocca" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                            <div class="col"><input class="form-control" type="number" placeholder="0" max="10" min="0"></div>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 5px;">
+                            <div class="col"><input class="form-control" type="text" id="store-1" style="background-color: rgba(255,255,255,0);margin-bottom: 0;" placeholder="Maroon" minlength="3" required="" inputmode="numeric" disabled="" readonly=""></div>
+                            <div class="col"><input class="form-control" type="number" placeholder="0" max="10" min="0"></div>
+                        </div>
+            </div><h6 style="font-family: Roboto, sans-serif;font-size: 18px;color: rgb(255,123,123); margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: center;" ><span style=" background:#fff;
     padding:0 10px;">Pembayaran</span></h6>
-                        <div><select class="form-control" id="register" name="register" required="" style="color: rgb(73,80,87);"><option value="COD" selected="">COD - Bayar di Tempat</option><option value="transfer">Transfer</option><option value="Dress Atika_Milo">Milo</option><option value="Dress Atika_Abu">Abu-abu</option><option value="Dress Atika - Mocca">Mocca</option><option value="Dress Atika_Maroon">Maroon</option></select></div>
-                        <button
-                            class="btn btn-block" id="Lead" type="submit" style="border-radius: 10px;background-color: rgb(3,145,0);color: rgb(255,255,255);font-size: 20px;padding-top: 4px;padding-bottom: 4px;margin-top: 20px;margin-bottom: 20px;" name="submit"
-                            value="submit" onclick="window.location.href=&#39;https://api.whatsapp.com/send?phone=62895635982735&amp;text=Saya+sudah+melakukan+pemesanan+Dress+Atika,+mohon+segera+diproses+ya+kak%3F&#39;;" disabled="disabled">&nbsp; Konfirmasi Pesanan&nbsp;<i class="far fa-arrow-alt-circle-right" style="font-size: 18px;"></i></button><script>
+            <div><select class="custom-select" id="pembayaran1" name="register" required="" style="color: rgb(73,80,87);"><option value="COD">COD - Bayar di Tempat</option><option value="transfer">Transfer</option></select></div><button class="btn btn-block"
+                id="Lead" type="submit" style="border-radius: 10px;background-color: rgb(3,145,0);color: rgb(255,255,255);font-size: 20px;padding-top: 4px;padding-bottom: 4px;margin-top: 20px;margin-bottom: 20px;" name="submit" value="submit" onclick="window.location.href=&#39;https://api.whatsapp.com/send?phone=62895635982735&amp;text=Saya+sudah+melakukan+pemesanan+Dress+Atika,+mohon+segera+diproses+ya+kak%3F&#39;;"
+                disabled="disabled">&nbsp; Konfirmasi Pesanan&nbsp;<i class="far fa-arrow-alt-circle-right" style="font-size: 18px;"></i></button><script>
     form.addEventListener('input', () => {
-    if (name.value.length > 2 &&
-        phone.value.length > 9 &&
-        alamat.value.length > 5 &&
-        kecamatan.value.length > 2 &&
-        kabupaten.value.length > 2 &&
-        kodepos.value.length > 2){
+    if (name1.value.length > 2 &&
+        phone1.value.length > 9 &&
+        alamat1.value.length > 5 &&
+        kecamatan1.value.length > 2 &&
+        kabupaten1.value.length > 2 &&
+        kodepos1.value.length > 2){
         Lead.removeAttribute('disabled');
     } else {
 Lead.setAttribute('disabled', 'disabled');
@@ -124,11 +149,11 @@ Lead.setAttribute('disabled', 'disabled');
                 .catch(error => console.error('Error!', error.message))
             })
   </script></form>
-                <ul style="padding-left: 25px;margin-top: 25px;font-size: 14px;margin-bottom: 0;">
-                    <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan untuk menyiapkan dana sesuai pesanan</em></li>
-                    <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan no HP selalu aktif</em></li>
-                    <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan ada orang dirumah untuk menerima paket</em></li>
-                </ul><script type="text/javascript">
+            <ul style="padding-left: 25px;margin-top: 25px;font-size: 14px;margin-bottom: 0;">
+                <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan untuk menyiapkan dana sesuai pesanan</em></li>
+                <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan no HP selalu aktif</em></li>
+                <li class="text-left" style="margin-bottom: 10px;"><em>Pastikan ada orang dirumah untuk menerima paket</em></li>
+            </ul><script type="text/javascript">
   var button = document.getElementById('Lead');
   button.addEventListener(
     'click', 
@@ -138,57 +163,56 @@ Lead.setAttribute('disabled', 'disabled');
     false
   );
 </script></div>
-            <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah barang pasti dikirim?</button>
-                <div class="panel"
-                    style="background-color: rgba(255,255,255,0);">
-                    <p class="text-left" style="font-family: roboto;font-size: 14px;"><strong>Jelas kak, Insyaallah kami amanah</strong>. kami berniat bisnis yang berkah dan membantu sesama, bukan menipu orang lain. Karena kami percaya semua pasti ada balasannya.</p>
-                </div>
-            </div>
-            <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Kalau barang tidak sesuai gimana?</button>
-                <div class="panel"
-                    style="background-color: rgba(255,255,255,0);">
-                    <p class="text-left" style="font-family: roboto;font-size: 14px;">Jika barang yang sampai tidak sesuai pesanan, kakak bisa kembalikan asal dalam kondisi baik seperti semula.<br><br><strong>Kami siap kembalikan sesuai harga produk 100% tanpa ribet</strong></p>
-                </div>
-            </div>
-            <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah bisa COD kak?</button>
-                <div class="panel" style="background-color: rgba(255,255,255,0);">
-                    <p class="text-left" style="font-family: roboto;font-size: 14px;">Pasti bisa. Tapi biasanya pihak ekspedisi membutuhkan waktu<strong> lebih lama</strong> untuk COD sampai ke rumah kakak</p>
-                </div>
-            </div>
-            <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah ada garansinya?</button>
-                <div class="panel" style="background-color: rgba(255,255,255,0);">
-                    <p class="text-left" style="font-family: roboto;font-size: 14px;"><strong>Garansi 100%</strong> untuk kakak. Kami ingin yang terbaik untuk kakak sehingga jika barang sampai tidak sesuai pesanan, Kami siap ganti baru atau ganti biaya 100%</p>
-                </div>
-            </div>
-            <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah kemahalan?</button>
-                <div class="panel" style="background-color: rgba(255,255,255,0);">
-                    <p class="text-left" style="font-family: roboto;font-size: 14px;">Desain kami dibuat <strong>sangat hati-hati</strong>, dan bukan produk impor jadi dari China. Bahan memang import, tapi penjahitnya lokal. <br><br>Mungkin harganya agak tinggi karena penjahit kami <strong>professional jahit halus</strong>.
-                        Produk asli Indonesia. Jadi kakak turut mendukung perekonomian bangsa Indonesia</p>
-                </div>
+        <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah barang pasti dikirim?</button>
+            <div class="panel" style="background-color: rgba(255,255,255,0);">
+                <p class="text-left" style="font-family: roboto;font-size: 14px;"><strong>Jelas kak, Insyaallah kami amanah</strong>. kami berniat bisnis yang berkah dan membantu sesama, bukan menipu orang lain. Karena kami percaya semua pasti ada balasannya.</p>
             </div>
         </div>
-        <div class="text-center" style="background-color: #aeaeae;padding-right: 30px;padding-left: 30px;padding-top: 30px;padding-bottom: 30px;">
-            <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;">
-                <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);">Selalu Cek Rekening<br>Sebelum Transfer!</h5>
-                <div style="padding: 10px;background-color: #ffffff;border-radius: 5px;width: 85%;margin: auto;margin-top: 20px;margin-bottom: 20px;"><img src="https://cekrekening.id/assets/images/logo-rekening.png" style="width: 85%;border-radius: 5px;"><img src="https://i.ibb.co/D89G9Sp/sevgsrgvaefc.jpg" style="border-radius: 5px;">
-                    <div style="padding: 5px;background-color: #ffdbdb;border-radius: 5px;margin: auto;">
-                        <h6 style="font-weight: normal;margin-bottom: 0;font-size: 12px;line-height: 18px;"><strong><em>NOMER REKENING INI BELUM PERNAH DILAPORKAN TERKAIT TINDAK PENIPUAN APAPUN!</em></strong><br></h6>
-                    </div>
+        <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Kalau barang tidak sesuai gimana?</button>
+            <div class="panel"
+                style="background-color: rgba(255,255,255,0);">
+                <p class="text-left" style="font-family: roboto;font-size: 14px;">Jika barang yang sampai tidak sesuai pesanan, kakak bisa kembalikan asal dalam kondisi baik seperti semula.<br><br><strong>Kami siap kembalikan sesuai harga produk 100% tanpa ribet</strong></p>
+            </div>
+        </div>
+        <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah bisa COD kak?</button>
+            <div class="panel" style="background-color: rgba(255,255,255,0);">
+                <p class="text-left" style="font-family: roboto;font-size: 14px;">Pasti bisa. Tapi biasanya pihak ekspedisi membutuhkan waktu<strong> lebih lama</strong> untuk COD sampai ke rumah kakak</p>
+            </div>
+        </div>
+        <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);margin-bottom: 10px;"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah ada garansinya?</button>
+            <div class="panel" style="background-color: rgba(255,255,255,0);">
+                <p class="text-left" style="font-family: roboto;font-size: 14px;"><strong>Garansi 100%</strong> untuk kakak. Kami ingin yang terbaik untuk kakak sehingga jika barang sampai tidak sesuai pesanan, Kami siap ganti baru atau ganti biaya 100%</p>
+            </div>
+        </div>
+        <div class="faqelement" style="border-radius: 10px;border-style: solid;border-width: 2px;border-color: rgb(255,123,123);"><button class="btn faq on" type="button" style="box-shadow: none;background-color: rgba(255,255,255,0);padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: rgb(255,123,123);">Apakah kemahalan?</button>
+            <div class="panel" style="background-color: rgba(255,255,255,0);">
+                <p class="text-left" style="font-family: roboto;font-size: 14px;">Desain kami dibuat <strong>sangat hati-hati</strong>, dan bukan produk impor jadi dari China. Bahan memang import, tapi penjahitnya lokal. <br><br>Mungkin harganya agak tinggi karena penjahit kami <strong>professional jahit halus</strong>.
+                    Produk asli Indonesia. Jadi kakak turut mendukung perekonomian bangsa Indonesia</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="background-color: #aeaeae;padding-right: 30px;padding-left: 30px;padding-top: 30px;padding-bottom: 30px;">
+        <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;">
+            <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);">Selalu Cek Rekening<br>Sebelum Transfer!</h5>
+            <div style="padding: 10px;background-color: #ffffff;border-radius: 5px;width: 85%;margin: auto;margin-top: 20px;margin-bottom: 20px;"><img src="https://cekrekening.id/assets/images/logo-rekening.png" style="width: 85%;border-radius: 5px;"><img src="https://i.ibb.co/D89G9Sp/sevgsrgvaefc.jpg" style="border-radius: 5px;">
+                <div style="padding: 5px;background-color: #ffdbdb;border-radius: 5px;margin: auto;">
+                    <h6 style="font-weight: normal;margin-bottom: 0;font-size: 12px;line-height: 18px;"><strong><em>NOMER REKENING INI BELUM PERNAH DILAPORKAN TERKAIT TINDAK PENIPUAN APAPUN!</em></strong><br></h6>
                 </div>
-                <h6 style="font-weight: normal;font-size: 14px;line-height: 25px;">Rekening kami sudah di cek dan <strong>terbukti aman</strong> karena tidak pernah mendapatkan laporan penipuan apapun. kakak juga bisa cek rekening kami di cekrekening.id<br></h6>
             </div>
-            <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;"><img src="https://i.ibb.co/Tbr20wg/Screenshot-2021-12-15-14-25-26-288-com-google-android-apps-maps.jpg" style="border-radius: 7px;margin-bottom: 10px;width: 85%;margin-top: 10px;">
-                <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Jangan Takut Dress Rusak</strong><br></h5>
-                <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Bisa dipastikan kakak menerima dress baru, bukan stok lama. Karena kami selalu membatasi jumlah produksi dress sehingga tidak ada stok menumpuk<br></h6>
-            </div>
-            <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;"><img src="https://s1.bukalapak.com/img/6276288503/large/20180320_195337_scaled.jpg" style="width: 75%;border-radius: 7px;margin-bottom: 10px;margin-top: 10px;">
-                <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Pengiriman Cepat</strong><br></h5>
-                <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Jangan takut, kami sudah bergerak cukup lama dan memiliki alur kerja (SOP) yang jelas sehingga lama pengiriman bisa dipastikan hanya&nbsp;2 - 4 hari<br></h6>
-            </div>
-            <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;"><img src="http://assets.kompasiana.com/items/album/2020/11/22/garansi-blog-daddystakoyaki-5fba5ca68ede480c5634e5e2.jpg" style="width: 55%;border-radius: 7px;margin-bottom: 10px;margin-top: 10px;">
-                <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Garansi Refund &amp; Ganti Baru</strong><br></h5>
-                <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Kami siap bertanggung jawab jika dress kakak tidak sesuai dengan pesanan mulai dari refund hingga ganti baru<br></h6>
-            </div><script>
+            <h6 style="font-weight: normal;font-size: 14px;line-height: 25px;">Rekening kami sudah di cek dan <strong>terbukti aman</strong> karena tidak pernah mendapatkan laporan penipuan apapun. kakak juga bisa cek rekening kami di cekrekening.id<br></h6>
+        </div>
+        <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;"><img src="https://i.ibb.co/Tbr20wg/Screenshot-2021-12-15-14-25-26-288-com-google-android-apps-maps.jpg" style="border-radius: 7px;margin-bottom: 10px;width: 85%;margin-top: 10px;">
+            <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Jangan Takut Dress Rusak</strong><br></h5>
+            <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Bisa dipastikan kakak menerima dress baru, bukan stok lama. Karena kami selalu membatasi jumlah produksi dress sehingga tidak ada stok menumpuk<br></h6>
+        </div>
+        <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;margin-bottom: 30px;"><img src="https://s1.bukalapak.com/img/6276288503/large/20180320_195337_scaled.jpg" style="width: 75%;border-radius: 7px;margin-bottom: 10px;margin-top: 10px;">
+            <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Pengiriman Cepat</strong><br></h5>
+            <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Jangan takut, kami sudah bergerak cukup lama dan memiliki alur kerja (SOP) yang jelas sehingga lama pengiriman bisa dipastikan hanya&nbsp;2 - 4 hari<br></h6>
+        </div>
+        <div style="padding: 10px;border-radius: 10px;border-style: solid;border-width: 2px;border-color: white;background-color: #efefef;"><img src="http://assets.kompasiana.com/items/album/2020/11/22/garansi-blog-daddystakoyaki-5fba5ca68ede480c5634e5e2.jpg" style="width: 55%;border-radius: 7px;margin-bottom: 10px;margin-top: 10px;">
+            <h5 style="font-weight: bold;line-height: 27px;margin-top: 10px;color: rgb(255,123,123);"><strong>Garansi Refund &amp; Ganti Baru</strong><br></h5>
+            <h6 style="font-weight: normal;line-height: 25px;font-size: 14px;">Kami siap bertanggung jawab jika dress kakak tidak sesuai dengan pesanan mulai dari refund hingga ganti baru<br></h6>
+        </div><script>
   var button = document.getElementById('Lead');
   button.addEventListener(
     'click', 
@@ -198,10 +222,10 @@ Lead.setAttribute('disabled', 'disabled');
     false
   );
 </script></div>
-        <div style="padding: 20px;background-color: rgb(25,25,25);margin: auto;">
-            <h6 class="text-center" style="margin-bottom: 2vh;margin-top: 2vh;color: rgb(255,255,255);"><strong>Fyp Fashion</strong></h6>
-            <p class="text-break text-center" style="font-family: Roboto, sans-serif;font-size: 14px;color: rgb(255,255,255);"><i class="fa fa-whatsapp"></i>&nbsp;0895635982735<br><i class="fa fa-copyright"></i>2021 Copyright Reserved<br></p>
-        </div>
+    <div style="padding: 20px;background-color: rgb(25,25,25);margin: auto;">
+        <h6 class="text-center" style="margin-bottom: 2vh;margin-top: 2vh;color: rgb(255,255,255);"><strong>Fyp Fashion</strong></h6>
+        <p class="text-break text-center" style="font-family: Roboto, sans-serif;font-size: 14px;color: rgb(255,255,255);"><i class="fa fa-whatsapp"></i>&nbsp;0895635982735<br><i class="fa fa-copyright"></i>2021 Copyright Reserved<br></p>
+    </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
