@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>fypfashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asul">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+<meta name="facebook-domain-verification" content="y38wzabsferrn6p3nfgsnpf7tqmmlb" />
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '430113948659615');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=430113948659615&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body style="background-color: rgb(239,239,239);">
+    <div><table id="myTable">
+<tr>
+    <th width="100">Name </th>
+    <th>Price</th>
+</tr>
+<tr>
+    <td><span>Pen :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>    
+<tr>
+    <td><span>Pencil :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Eraser :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Sharpner :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>  
+<tr>
+    <td><span>Book :</span></td>
+    <td><input type="text" class='txtCal' /></td>
+</tr>
+<tr>
+    <td><span><b>TOTAL  :</b></span></td>
+    <td><b><span id="total_sum_value"></span></b></td>
+</tr>
+<tr colspan="2">
+    <td colspan="2"><br/><i>Enter values above</i>
+    </td>
+</tr>
+</table><script>
+    // updates total on each entry
+
+$(document).ready(function() {
+
+  $("#myTable").on('input', '.txtCal', function() {
+    var calculated_total_sum = 0;
+
+    $("#myTable .txtCal").each(function() {
+      var get_textbox_value = $(this).val();
+      if ($.isNumeric(get_textbox_value)) {
+        calculated_total_sum += parseFloat(get_textbox_value);
+      }
+    });
+    $("#total_sum_value").html(calculated_total_sum);
+  });
+});
+</script></div>
+    <div class="text-center col-sm-7 col-md-5 col-lg-4" style="margin: auto;background-color: #ffffff;padding: 0;padding-bottom: 70px;">
+        <div style="padding: 15px 10px;background-color: rgb(255,123,123);">
+            <h6 style="color: rgb(255,255,255);margin-bottom: 0;">Fyp.fashion</h6>
+        </div>
+        <div style="padding: 10px;padding-top: 15px;">
+            <div class="row" style="margin: 0;">
+                <div class="col-4" style="padding: 0;"><img class="img-fluid"></div>
+                <div class="col" style="padding: 0px 10px;">
+                    <h6 class="text-left" style="margin-bottom: 0;font-weight: bold;"><span class="badge badge-primary text-truncate" style="font-size: 12px;margin: auto;padding: 2px 4px;background-color: rgb(255,15,0);margin-bottom: -2px;">PROMO</span>&nbsp;Dress Cantika | Dress Muslim Brukat | Premium</h6>
+                    <div style="padding: 1px;background-color: #efefef;margin-top: 5px;margin-bottom: 5px;"></div>
+                    <div class="row" style="margin: 0;margin-bottom: 5px;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(33,37,41);">Variasi</h6>
+                        </div>
+                        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+                            <h6 class="text-center" style="font-size: 14px;margin: 0;color: rgb(33,37,41);width: 50px;">Jumlah</h6>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Dusty Lavender</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="dusty_lavender"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Dusty Pink</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="dusty_pink"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Grey</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="grey"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Mocca</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="mocca"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Navy</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="navy"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Mint</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="mint"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Lilac</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="lilac"></div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center" style="padding: 0;">
+                            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Maroon</h6>
+                        </div>
+                        <div class="col-auto" style="padding: 0;padding-left: 5px;"><input type="text" style="border-width:0px;width: 50px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" placeholder="0" inputmode="numeric" name="maroon"></div>
+                    </div>
+                </div>
+            </div><script>
+    // updates total on each entry
+
+$(document).ready(function() {
+
+  $("#myTable").on('input', '.txtCal', function() {
+    var calculated_total_sum = 0;
+
+    $("#myTable .txtCal").each(function() {
+      var get_textbox_value = $(this).val();
+      if ($.isNumeric(get_textbox_value)) {
+        calculated_total_sum += parseFloat(get_textbox_value);
+      }
+    });
+    $("#total_sum_value").html(calculated_total_sum);
+  });
+});
+</script></div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div style="background-color: #ffffff;padding: 10px;">
+            <div class="row" style="margin: 0;">
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-left" style="margin: 0;color: rgb(33,37,41);">Pesan :&nbsp;&nbsp;</h6>
+                </div>
+                <div class="col d-flex align-items-center" style="padding: 0;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;text-align: right;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Silahkan tinggalkan pesan disini..." name="catatan"></div>
+            </div>
+        </div>
+        <div style="background-color: #efefef;padding: 10px;"></div>
+        <div style="background-color: #ffffff;padding: 10px;padding-bottom: 0;padding-top: 20px;"><h6 style="font-family: Roboto, sans-serif;font-size: 16px;color: #333333; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: left;" ><span style=" background:#fff;
+    padding:0 10px 0 0;">Penerima</span></h6></div>
+        <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Nama Lengkap" name="nama"></div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="No Telepon" inputmode="numeric" name="wa"></div>
+        <div style="background-color: #efefef;padding: 10px;"></div>
+        <div style="background-color: #ffffff;padding: 10px;padding-bottom: 0;padding-top: 20px;"><h6 style="font-family: Roboto, sans-serif;font-size: 16px;color: #333333; border-bottom: 1px solid #CFCFCF; line-height: 0.1em; text-align: left;" ><span style=" background:#fff;
+    padding:0 10px 0 0;">Alamat</span></h6></div>
+        <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Detail Alamat (Cth: Jalan, Desa, RT/RW, No Rumah, Patokan)" name="alamat"></div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div class="row" style="margin: 0;background-color: #efefef;">
+            <div class="col" style="padding: 0;">
+                <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Provinsi" name="provinsi"></div>
+            </div>
+            <div class="col" style="padding: 0;padding-left: 2px;">
+                <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Kota / Kabupaten" name="kota_kabupaten"></div>
+            </div>
+        </div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div class="row" style="margin: 0;background-color: #efefef;">
+            <div class="col" style="padding: 0;">
+                <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Kecamatan" name="kecamatan"></div>
+            </div>
+            <div class="col" style="padding: 0;padding-left: 2px;">
+                <div style="padding: 10px;background-color: #ffffff;"><input type="text" style="border-width: 0px;font-size: 14px;padding: 0;color: rgb(33,37,41);background-color: rgba(255,255,255,0);width: 100%;" placeholder="Kode Pos" name="kode_pos"></div>
+            </div>
+        </div>
+        <div style="background-color: #efefef;padding: 10px;"></div>
+        <div style="background-color: #ffffff;padding: 10px;">
+            <div class="row" style="margin: 0;">
+                <div class="col d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-left" style="margin: 0;color: rgb(230,96,0);font-size: 14px;"><i class="fa fa-dollar" style="font-size: 16px;"></i>&nbsp; Metode Pembayaran</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(33,37,41);font-size: 14px;">COD - Bayar di Rumah</h6>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div style="background-color: #ffffff;padding: 10px;">
+            <div class="row" style="margin: 0;">
+                <div class="col d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(117,117,117);font-size: 14px;">Harga Produk Satuan</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">Rp</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">214.000</h6>
+                </div>
+            </div>
+            <h6 class="text-left" style="margin: 0;color: rgb(117,117,117);font-size: 12px;margin-bottom: 5px;"><em>*Untuk COD harga produk +15rb</em></h6>
+            <div class="row" style="margin: 0;margin-bottom: 5px;">
+                <div class="col d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(117,117,117);font-size: 14px;">Jumlah Produk</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">0</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">&nbsp;pcs</h6>
+                </div>
+            </div>
+            <div class="row" style="margin: 0;margin-bottom: 5px;">
+                <div class="col d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(117,117,117);font-size: 14px;">Biaya Penanganan COD</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">Rp</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">&nbsp;5.000</h6>
+                </div>
+            </div>
+            <div class="row" style="margin: 0;margin-bottom: 5px;">
+                <div class="col d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(117,117,117);font-size: 14px;">Bonus Hari Ini</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">Rp</h6>
+                </div>
+                <div class="col-auto d-flex align-items-center" style="padding: 0;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(230,96,0);">&nbsp;<span style="text-decoration: line-through;">50.000</span></h6>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #efefef;padding: 1px;"></div>
+        <div style="padding: 10px;background-color: #ffffff;">
+            <h6 class="text-left" style="margin: 0;color: rgb(0,140,56);font-size: 12px;">*Biaya Pengiriman akan di Konfirmasi oleh Admin melalui Pesan Whatsapp</h6>
+        </div>
+        <div style="background-color: #efefef;padding: 10px;"></div>
+        <div style="padding: 10px;background-color: #ffffff;">
+            <div style="background-color: rgb(0,140,56);border-radius: 100px;padding: 10px 5px;margin: auto;width: 80%;" onclick="window.location.href=&#39;https://api.whatsapp.com/send/?phone=628980626943&amp;text=Halo,%20saya%20sudah%20melakukan%20pemesanan%20Gamis%20Kaniya%20by%20Misska%20Hijab.%20Mohon%20segera%20diproses%20ya%20%F0%9F%99%8F&#39;;">
+                <h6 style="margin-bottom: 0;color: rgb(255,255,255);font-weight: normal;"><i class="fa fa-whatsapp" style="font-size: 18px;"></i>&nbsp;Transfer Lebih Hemat</h6>
+            </div>
+            <div style="background-color: rgb(230,96,0);border-radius: 100px;padding: 10px 5px;margin: auto;width: 80%;margin-top: 10px;" onclick="window.location.href=&#39;https://api.whatsapp.com/send/?phone=628980626943&amp;text=Halo,%20saya%20sudah%20melakukan%20pemesanan%20Gamis%20Kaniya%20by%20Misska%20Hijab.%20Mohon%20segera%20diproses%20ya%20%F0%9F%99%8F&#39;;">
+                <h6 style="margin-bottom: 0;color: rgb(255,255,255);font-weight: normal;"><i class="la la-truck" style="font-size: 18px;"></i>&nbsp;Tetap Pesan COD</h6>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-5 col-lg-4" style="box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.2);padding: 0;position: fixed;bottom: 0px;background-color: #ffffff;" z-index="9999999999 !important;">
+            <div class="row" style="margin: 0;">
+                <div class="col" style="padding: 10px;background-color: #ffffff;">
+                    <h6 class="text-right" style="margin: 0;color: rgb(117,117,117);font-size: 12px;margin-bottom: 5px;">Total Pesanan | Belum Ongkir</h6>
+                    <div class="row" style="margin: 0;">
+                        <div class="col" style="padding: 0;">
+                            <h5 class="text-right" style="margin: 0;color: rgb(230,96,0);font-weight: bold;">Rp</h5>
+                        </div>
+                        <div class="col-auto" style="padding: 0;">
+                            <h5 class="text-right" style="margin: 0;color: rgb(230,96,0);font-weight: bold;">428.000</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto d-flex justify-content-center align-items-center" style="padding: 10px 25px;background-color: #e66000;">
+                    <h6 class="text-center" style="margin: 0;color: rgb(255,255,255);font-weight: bold;">Buat Pesanan</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
