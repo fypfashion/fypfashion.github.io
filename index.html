@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
@@ -32,6 +33,25 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=430113948659615&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+
+
+
+
+<!-- Sales Notification -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css"/>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  >
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+<!-- End Sales Notification -->
+
+
+
+
+<!-- Number Spinner -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body style="background-color: rgb(239,239,239);">
@@ -71,6 +91,422 @@ src="https://www.facebook.com/tr?id=430113948659615&ev=PageView&noscript=1"
         <div style="padding: 20px;background-color: rgb(255,236,236);margin: auto;">
             <h6 style="margin-bottom: 2vh;margin-top: 2vh;"><strong>Fyp Fashion</strong></h6>
             <p class="text-break text-center" style="font-family: Roboto, sans-serif;font-size: 14px;"><i class="fa fa-copyright"></i>2021 Copyright Reserved<br>Daerah Istimewa Yogyakarta</p>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Dusty Lavender</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x1" class="input-number1"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="dusty_lavender"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number1'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Dusty Pink</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x2" class="input-number2"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="dusty_pink"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number2'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Grey</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x3" class="input-number3"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="grey"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number3'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Mocca</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x4" class="input-number4"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="mocca"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number4'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Navy</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x5" class="input-number5"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="navy"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number5'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Mint</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x6" class="input-number6"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="mint"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number6'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Lilac</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x7" class="input-number7"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="lilac"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number7'));
+</script></div>
+        </div>
+    </div>
+    <div class="row" style="margin: 0;padding: 5px 0;">
+        <div class="col d-flex align-items-center" style="padding: 0;">
+            <h6 class="text-left" style="font-size: 14px;margin: 0;color: rgb(135,135,135);">Maroon</h6>
+        </div>
+        <div class="col-auto d-flex align-items-center" style="padding: 0;padding-left: 5px;">
+            <div class="d-flex align-items-center"><span class="d-flex justify-content-center align-items-center input-number-increment" style="font-size: 16px;font-weight: bold;color: #e66000;padding-right: 10px;"><i class="fas fa-minus"></i></span><input type="text" id="x8" class="input-number8"
+                    value="0" min="0" max="10" readonly="" style="border-width: 0px;width: 40px;font-size: 14px;padding: 0;text-align: center;color: rgb(33,37,41);background-color: rgb(245,245,245);" name="maroon"><span class="d-flex justify-content-center align-items-center input-number-increment"
+                    style="font-size: 16px;font-weight: bold;color: #e66000;padding-left: 10px;"><i class="fas fa-plus"></i></span><script>
+    (function() {
+ 
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+inputNumber($('.input-number8'));
+</script></div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
